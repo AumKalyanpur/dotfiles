@@ -1,0 +1,9 @@
+2025-03-19T12:04:40.367327171+05:30 INFO kanata-tray config folder: /home/jelly/.config/kanata-tray
+2025-03-19T12:04:40.368327634+05:30 INFO loading status icon: /home/jelly/.config/kanata-tray/status_icons/default.ico
+2025-03-19T12:04:40.371209624+05:30 INFO loading status icon: /home/jelly/.config/kanata-tray/status_icons/crash.ico
+2025-03-19T12:04:40.371817381+05:30 INFO loading status icon: /home/jelly/.config/kanata-tray/status_icons/pause.ico
+2025-03-19T12:04:40.372278486+05:30 INFO loading status icon: /home/jelly/.config/kanata-tray/status_icons/live-reload.ico
+2025-03-19T12:04:40.472867958+05:30 INFO Running preset 'Default Preset'
+2025-03-19T12:04:40.47323326+05:30 INFO Running command: /usr/bin/kanata -c=/home/jelly/kanata/kanata.kbd --port 5829
+2025-03-19T12:04:40.475648106+05:30 INFO Started kanata (pid=1890)
+2025-03-19T12:04:42.978642959+05:30 INFO Connected to kanata via TCP (127.0.0.1:40610)
