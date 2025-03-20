@@ -200,9 +200,6 @@ alias cdf=zf
 zinit cdreplay -q
 
 # ================================== Setup Zellij autostart ========================
-
 if [[ -z "$ZELLIJ" ]]; then
-    if [[ -z "$ZELLIJ_SESSION_NAME" ]]; then
-        zellij attach --create default
-    fi
+    zellij attach -c Default
 fi
