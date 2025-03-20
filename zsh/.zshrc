@@ -22,7 +22,7 @@ export PATH=$PATH:/opt/android-sdk/platform-tools
 # ========================= Install Basic Plugins =========================
 #
 # Setup tab completions and syntax highlighting
-zinit ice wait'!1'
+zinit ice lucid wait'!1'
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
 
@@ -30,12 +30,12 @@ zinit light zsh-users/zsh-syntax-highlighting
 
 # Enable fzf shell integration
 eval "$(fzf --zsh)"
-zinit ice wait'!1'
+zinit ice lucid wait'!1'
 zinit light Aloxaf/fzf-tab
 zstyle ':fzf-tab:complete:z*' fzf-preview'fzf ls --color $realpath'
 
 # Setup autosuggestions
-zinit ice wait'!0'
+zinit ice lucid wait'!0'
 zinit light zsh-users/zsh-autosuggestions
 autoload -U compinit && compinit #load the auto suggestion libraries
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # Sets it so lower case can match with upper
@@ -199,14 +199,10 @@ alias cd=z
 alias cdf=zf
 zinit cdreplay -q
 
-if [[ -z "$ZELLIJ" ]]; then
-    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
-        zellij attach -c
-    else
-        zellij
-    fi
+# ================================== Setup Zellij autostart ========================
 
-    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
-        exit
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ -z "$ZELLIJ_SESSION_NAME" ]]; then
+        zellij attach --create default
     fi
 fi
