@@ -201,5 +201,6 @@ zinit cdreplay -q
 
 # ================================== Setup Zellij autostart ========================
 if [[ -z "$ZELLIJ" ]]; then
+
     zellij attach -c Default
 fi
